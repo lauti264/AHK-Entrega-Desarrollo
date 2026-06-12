@@ -1,0 +1,7 @@
+export class Categoria{
+    tipo //ENUM oro, PLata, bronce
+
+    
+
+    cantParticipantes(){}
+}

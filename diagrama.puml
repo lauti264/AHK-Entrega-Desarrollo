@@ -1,0 +1,52 @@
+@startuml
+
+class Participante{
+    nombre
+    apellido
+    edad
+    mail
+    dni
+    medioDeContacto
+    entidadAcademica
+    carrera
+    cantReferido
+    categoria
+    fechaRefe
+    
+
+
+    calculoPuntos()
+    referidoEsAhk()
+    cantReferidos()
+    cantChances()
+
+}
+
+class Referencia{
+    link
+    fechaDeAceptacion
+    Participante
+    Referido
+    email
+    dni
+    participante
+    sistComunicacion
+}
+
+class Categoria{
+    nombre
+    precio
+    multiplo
+    referidosMin
+}
+
+class Historialacademico{
+    carrera
+    materias
+    materiasAprobadas
+}
+
+
+Participante --> "*"Referencia
+Participante --> Categoria
+Participante --> Historialacademico 
